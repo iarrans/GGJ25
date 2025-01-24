@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 359958865945017190}
   - component: {fileID: 1894091356316051280}
   - component: {fileID: 6013093240822161906}
+  - component: {fileID: -8772803941359068920}
   m_Layer: 5
   m_Name: MachineButton
   m_TagString: Untagged
@@ -120,7 +121,32 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1894091356316051280}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: -8772803941359068920}
+        m_TargetAssemblyTypeName: MachineBubble, Assembly-CSharp
+        m_MethodName: ButtonClicked
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &-8772803941359068920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1878146779819354183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b71e1bc0c18ebc24abb81ef12a2cb162, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isActived: 0
 --- !u!1 &5749875363091215907
 GameObject:
   m_ObjectHideFlags: 0
