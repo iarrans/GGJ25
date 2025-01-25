@@ -166,6 +166,7 @@ public class GameManager : MonoBehaviour
     public IEnumerator GameEnding()
     {
         Debug.Log("Game ending");
+        yield return null;
     }
 
 }
