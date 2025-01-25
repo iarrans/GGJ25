@@ -109,7 +109,7 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            Debug.Log("Game ending");
+            StartCoroutine(GameEnding());
         }
 
         yield return null;
@@ -153,7 +153,7 @@ public class GameManager : MonoBehaviour
 
     public void WrongButtonClicked()//Skips time as penalization
     {
-        TimeBehaviour.instance.tiempoRestante -= 1;
+        TimeBehaviour.instance.tiempoRestante -= rounds[currentRound].totalTime * 0.1f;
         AudioManager.instance.PlaySFXClip(AudioManager.instance.buttonSoundWrong);
     }
 
@@ -161,6 +161,11 @@ public class GameManager : MonoBehaviour
     {
         points++;
         pointsText.text = "Puntos:" + points;
+    }
+
+    public IEnumerator GameEnding()
+    {
+        Debug.Log("Game ending");
     }
 
 }
