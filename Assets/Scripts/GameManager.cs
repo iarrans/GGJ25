@@ -4,6 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
@@ -25,6 +26,9 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
 
     public List<MachineBubble> chosenButtons;
+
+    public Image FadeOut;
+    public float FadeRate;
 
     private void Awake()
     {
@@ -176,7 +180,17 @@ public class GameManager : MonoBehaviour
 
     public IEnumerator FadeOutWhite()
     {
-        Debug.Log("yield return null");
-        yield return null;
+        FadeOut.gameObject.SetActive(true);
+        float targetAlpha = 1.0f;
+        Color curColor = FadeOut.color;
+        while (curColor.a < 1)
+        {
+            curColor.a = Mathf.Lerp(curColor.a, targetAlpha, FadeRate * Time.deltaTime);
+            FadeOut.color = curColor;
+            yield return null;
+        }
+        Debug.Log("We should change scene");
+        yield return new WaitForSeconds(1);
+        SceneManager.LoadScene("Credits");
     }
 }
