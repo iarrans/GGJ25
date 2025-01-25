@@ -77,6 +77,7 @@ public class GameManager : MonoBehaviour
     {
         Debug.Log("Round finished");
         isPlayingRound = false;
+        AudioManager.instance.PlayMachineAudio();
 
         RoundSO roundData = rounds[currentRound];
 

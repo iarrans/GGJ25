@@ -41,4 +41,10 @@ public class AudioManager : MonoBehaviour
         Destroy(audioSourceSFX, clipLenght);
 
     }
+
+    public void PlayMachineAudio()
+    {
+        int audio = Random.Range(0, machineAudios.Count);
+        PlaySFXClip(machineAudios[audio]);
+    }
 }
