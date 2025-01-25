@@ -183,10 +183,12 @@ public class GameManager : MonoBehaviour
         FadeOut.gameObject.SetActive(true);
         float targetAlpha = 1.0f;
         Color curColor = FadeOut.color;
-        while (curColor.a < 1)
+
+        while (curColor.a < 0.98)
         {
             curColor.a = Mathf.Lerp(curColor.a, targetAlpha, FadeRate * Time.deltaTime);
             FadeOut.color = curColor;
+            Debug.Log("fadevalue" + curColor.a);
             yield return null;
         }
         Debug.Log("We should change scene");
