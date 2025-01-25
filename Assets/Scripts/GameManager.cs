@@ -57,6 +57,11 @@ public class GameManager : MonoBehaviour
 
         StartCoroutine(NextWave(RoundData.bubblesPerWave));
         isPlayingRound = true;
+
+        if (RoundData.dialogueAudio != null) {
+            AudioManager.instance.parentsAudioSource.clip = RoundData.dialogueAudio;
+            AudioManager.instance.parentsAudioSource.Play();
+        }
     }
 
     public IEnumerator NextWave(int bubblesPerWave)
@@ -79,29 +84,25 @@ public class GameManager : MonoBehaviour
         isPlayingRound = false;
         AudioManager.instance.PlayMachineAudio();
 
-        RoundSO roundData = rounds[currentRound];
-
-        if (roundData.dialogueAudio != null)
+        if (currentRound < rounds.Count - 1)
         {
-            Debug.Log("audioclip.duration");
-            //Audiosource con el clip de audio
-            AudioManager.instance.parentsAudioSource.clip = roundData.dialogueAudio;
-            //Reproducir audio
-            AudioManager.instance.parentsAudioSource.Play();
-            //Espera de duracion de audio
-            yield return new WaitForSeconds(roundData.dialogueAudio.length);
-            //aumentar intensidad?
-        }
-        if (roundData.increasesTension)
-        {
-            Debug.Log("A");
-            StartCoroutine(AudioManager.instance.IncreaseTension());
-        }
+            currentRound++;
 
-        currentRound++;
+            RoundSO roundData = rounds[currentRound];
 
-        if (currentRound < rounds.Count)
-        {
+            if (roundData.dialogueAudio != null)
+            {
+                //Audiosource con el clip de audio
+                while (AudioManager.instance.parentsAudioSource.isPlaying)
+                {
+                    yield return new WaitForSeconds(0.2f);
+                }
+            }
+            if (roundData.increasesTension)
+            {
+                Debug.Log("A");
+                StartCoroutine(AudioManager.instance.IncreaseTension());
+            }
             Debug.Log("Loading new round");
 
             yield return new WaitForSeconds(1);
@@ -109,7 +110,7 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            StartCoroutine(GameEnding());
+            GameEnding();
         }
 
         yield return null;
@@ -153,8 +154,11 @@ public class GameManager : MonoBehaviour
 
     public void WrongButtonClicked()//Skips time as penalization
     {
-        TimeBehaviour.instance.tiempoRestante -= rounds[currentRound].totalTime * 0.1f;
-        AudioManager.instance.PlaySFXClip(AudioManager.instance.buttonSoundWrong);
+        if (isPlayingRound)
+        {
+            TimeBehaviour.instance.tiempoRestante -= rounds[currentRound].totalTime * 0.1f;
+            AudioManager.instance.PlaySFXClip(AudioManager.instance.buttonSoundWrong);
+        }
     }
 
     public void AddPoint()
@@ -163,10 +167,16 @@ public class GameManager : MonoBehaviour
         pointsText.text = "Puntos:" + points;
     }
 
-    public IEnumerator GameEnding()
+    public void GameEnding()
     {
         Debug.Log("Game ending");
-        yield return null;
+        StartCoroutine(AudioManager.instance.GameEnding());
+       
     }
 
+    public IEnumerator FadeOutWhite()
+    {
+        Debug.Log("yield return null");
+        yield return null;
+    }
 }

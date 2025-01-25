@@ -2279,6 +2279,8 @@ MonoBehaviour:
   - {fileID: 939124895}
   - {fileID: 17869893}
   FadeTime: 1
+  endGameDialogue: {fileID: 8300000, guid: aba0032794fc91248a56afc25539b69a, type: 3}
+  kidWon: {fileID: 8300000, guid: 8b70546759d878742bf1d9a7455d7266, type: 3}
 --- !u!1 &2105161648
 GameObject:
   m_ObjectHideFlags: 0

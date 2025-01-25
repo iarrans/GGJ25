@@ -20,6 +20,9 @@ public class AudioManager : MonoBehaviour
     int currentTension;
     public float FadeTime;
 
+    public AudioClip endGameDialogue;
+    public AudioClip kidWon;
+
     private void Awake()
     {
         instance = this;
@@ -83,5 +86,23 @@ public class AudioManager : MonoBehaviour
             currentTension++;
         }        
         yield return null;
+    }
+
+    public IEnumerator GameEnding()
+    {
+        float waitTime = endGameDialogue.length;
+        parentsAudioSource.clip = endGameDialogue;
+        parentsAudioSource.Play();
+        yield return new WaitForSeconds(waitTime);
+
+        //insertar animacion de ganar del niño
+        
+        waitTime = kidWon.length;
+        parentsAudioSource.clip = kidWon;
+        parentsAudioSource.Play();
+        yield return new WaitForSeconds(waitTime);
+
+        StartCoroutine(GameManager.instance.FadeOutWhite());
+
     }
 }
