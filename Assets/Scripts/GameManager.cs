@@ -22,6 +22,7 @@ public class GameManager : MonoBehaviour
 
     public bool isPlayingRound;
     public TextMeshProUGUI pointsText;
+    public TextMeshProUGUI roundsText;
 
     public static GameManager instance;
 
@@ -51,6 +52,10 @@ public class GameManager : MonoBehaviour
     public IEnumerator RoundStart()
     {
         yield return null;
+
+        int rondaReal = currentRound + 1;
+        roundsText.text = "Ronda " + rondaReal.ToString();
+
         RoundSO RoundData = rounds[currentRound];
 
         pendingRoundWaves = RoundData.waves;
@@ -168,7 +173,7 @@ public class GameManager : MonoBehaviour
     public void AddPoint()
     {
         points++;
-        pointsText.text = "Puntos:" + points;
+        pointsText.text = "" + points;
     }
 
     public void GameEnding()
