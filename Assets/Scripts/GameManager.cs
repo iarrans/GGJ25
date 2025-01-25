@@ -78,12 +78,17 @@ public class GameManager : MonoBehaviour
         Debug.Log("Round finished");
         isPlayingRound = false;
 
-        if (rounds[currentRound].dialogueAudio != null)
+        RoundSO roundData = rounds[currentRound];
+
+        if (roundData.dialogueAudio != null)
         {
             Debug.Log("audioclip.duration");
             //Audiosource con el clip de audio
+            AudioManager.instance.parentsAudioSource.clip = roundData.dialogueAudio;
             //Reproducir audio
+            AudioManager.instance.parentsAudioSource.Play();
             //Espera de duracion de audio
+            yield return new WaitForSeconds(roundData.dialogueAudio.length);
         }
 
         currentRound++;
