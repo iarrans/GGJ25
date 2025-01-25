@@ -3048,10 +3048,10 @@ MonoBehaviour:
   SFXVolume: 1
   BGMVolume: 1
   buttonSound: {fileID: 8300000, guid: 9ef855f92bb4cb549b987ea97a0c8879, type: 3}
-  buttonSoundWrong: {fileID: 8300000, guid: 9165b27e8b680eb4c8e32c5cbed3bf9c, type: 3}
+  buttonSoundWrong: {fileID: 8300000, guid: 0df262d4d5ecd1143a149bb9900dada8, type: 3}
   machineAudios:
-  - {fileID: 8300000, guid: 8b70546759d878742bf1d9a7455d7266, type: 3}
-  - {fileID: 8300000, guid: 5e63fbad3db110a42a8bf2dc873c3e6c, type: 3}
+  - {fileID: 8300000, guid: b1d18a13d45caec4e863fcd0b0c674af, type: 3}
+  - {fileID: 8300000, guid: b1d18a13d45caec4e863fcd0b0c674af, type: 3}
   BGMIntensities:
   - {fileID: 1635514060}
   - {fileID: 939124895}
