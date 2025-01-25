@@ -11,7 +11,7 @@ public class MachineBubble : MonoBehaviour
         if (isLighted)
         {
             Debug.Log("CorrectlyClicked");
-            gameObject.GetComponent<Animator>().Play("ButtonPressed");
+            GetComponent<Animator>().SetTrigger("test");
             GameManager.instance.CorrectButtonClicked(gameObject);
         } else
         {
