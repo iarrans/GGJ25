@@ -31,6 +31,8 @@ public class GameManager : MonoBehaviour
     public Image FadeOut;
     public float FadeRate;
 
+    public Sprite upButton;
+
     private void Awake()
     {
         instance = this;
@@ -138,6 +140,7 @@ public class GameManager : MonoBehaviour
             chosenButton.isLighted = true;
             //Para probar de manera temporal
             chosenButton.gameObject.GetComponent<Image>().color = Color.red;
+            chosenButton.gameObject.GetComponent<Animator>().Play("ButtonRising");
         }
         yield return null;
     }
