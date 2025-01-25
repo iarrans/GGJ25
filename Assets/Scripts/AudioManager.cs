@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -17,6 +18,7 @@ public class AudioManager : MonoBehaviour
 
     public List<AudioSource> BGMIntensities;
     int currentTension;
+    public float FadeTime;
 
     private void Awake()
     {
@@ -46,7 +48,7 @@ public class AudioManager : MonoBehaviour
 
     public void PlayMachineAudio()
     {
-        int audio = Random.Range(0, machineAudios.Count);
+        int audio = UnityEngine.Random.Range(0, machineAudios.Count);
         PlaySFXClip(machineAudios[audio]);
     }
 
@@ -71,9 +73,14 @@ public class AudioManager : MonoBehaviour
     {
         if (currentTension + 1 < BGMIntensities.Count)
         {
-            BGMIntensities[currentTension].volume = 0;
+            while (BGMIntensities[currentTension].volume > 0)
+            {
+                BGMIntensities[currentTension].volume -= BGMVolume * Time.deltaTime / FadeTime;
+                BGMIntensities[currentTension + 1].volume += BGMVolume * Time.deltaTime / FadeTime;
+
+                yield return null;
+            }
             currentTension++;
-            BGMIntensities[currentTension].volume = BGMVolume;
         }        
         yield return null;
     }
