@@ -11,9 +11,11 @@ public class MachineBubble : MonoBehaviour
         if (isLighted)
         {
             Debug.Log("CorrectlyClicked");
+            GameManager.instance.CorrectButtonClicked(gameObject);
         } else
         {
             Debug.Log("Mistake! Yikes!");
+            GameManager.instance.WrongButtonClicked();
         }
     }
 }
