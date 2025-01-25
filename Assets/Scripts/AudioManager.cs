@@ -15,11 +15,13 @@ public class AudioManager : MonoBehaviour
     public AudioClip buttonSoundWrong;
     public List<AudioClip> machineAudios;
 
+    public List<AudioSource> BGMIntensities;
+    int currentTension;
+
     private void Awake()
     {
         instance = this;
     }
-
 
     public void PlaySFXClip(AudioClip audioclip)
     {
@@ -46,5 +48,33 @@ public class AudioManager : MonoBehaviour
     {
         int audio = Random.Range(0, machineAudios.Count);
         PlaySFXClip(machineAudios[audio]);
+    }
+
+
+    private void Start()
+    {
+        currentTension = 0;
+        StartCoroutine(StartTension());
+    }
+
+    private IEnumerator StartTension()
+    {
+        yield return null;
+        foreach (AudioSource BGMsource in BGMIntensities)
+        {
+            BGMsource.volume = 0;
+        }
+        BGMIntensities[0].volume = BGMVolume;
+    }
+
+    public IEnumerator IncreaseTension()
+    {
+        if (currentTension + 1 < BGMIntensities.Count)
+        {
+            BGMIntensities[currentTension].volume = 0;
+            currentTension++;
+            BGMIntensities[currentTension].volume = BGMVolume;
+        }        
+        yield return null;
     }
 }

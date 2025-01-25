@@ -16,3 +16,4 @@ MonoBehaviour:
   waves: 1
   totalTime: 15
   dialogueAudio: {fileID: 0}
+  increasesTension: 1

@@ -90,6 +90,12 @@ public class GameManager : MonoBehaviour
             AudioManager.instance.parentsAudioSource.Play();
             //Espera de duracion de audio
             yield return new WaitForSeconds(roundData.dialogueAudio.length);
+            //aumentar intensidad?
+        }
+        if (roundData.increasesTension)
+        {
+            Debug.Log("A");
+            StartCoroutine(AudioManager.instance.IncreaseTension());
         }
 
         currentRound++;

@@ -16,3 +16,4 @@ MonoBehaviour:
   waves: 2
   totalTime: 15
   dialogueAudio: {fileID: 8300000, guid: aba0032794fc91248a56afc25539b69a, type: 3}
+  increasesTension: 1

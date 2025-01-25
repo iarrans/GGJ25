@@ -8,5 +8,6 @@ public class RoundSO : ScriptableObject
     public int bubblesPerWave;
     public int waves;
     public float totalTime;
-    public AudioClip dialogueAudio;   
+    public AudioClip dialogueAudio;
+    public bool increasesTension;
 }
