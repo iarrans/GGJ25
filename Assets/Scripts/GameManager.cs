@@ -132,6 +132,7 @@ public class GameManager : MonoBehaviour
         MachineBubble bubbleButton = button.GetComponent<MachineBubble>();
 
         bubbleButton.isLighted = false;
+        AudioManager.instance.PlaySFXClip(AudioManager.instance.buttonSound);
 
         chosenButtons.Remove(bubbleButton);
         AddPoint();
@@ -146,6 +147,7 @@ public class GameManager : MonoBehaviour
     public void WrongButtonClicked()//Skips time as penalization
     {
         TimeBehaviour.instance.tiempoRestante -= 1;
+        AudioManager.instance.PlaySFXClip(AudioManager.instance.buttonSoundWrong);
     }
 
     public void AddPoint()
