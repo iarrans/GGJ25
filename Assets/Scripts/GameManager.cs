@@ -9,6 +9,7 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
     //botones
+    public List<RoundSO> rounds;
     public List<MachineBubble> machineBubbles;
     public int currentRound;//Current Round number
     public float initialTimer;//Initial round Timer
@@ -32,6 +33,7 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
+        currentRound = 0;
         StartCoroutine(GameStart());
     }
 
@@ -45,23 +47,25 @@ public class GameManager : MonoBehaviour
     public IEnumerator RoundStart()
     {
         yield return null;
-        pendingRoundWaves = 2;
+        RoundSO RoundData = rounds[currentRound];
 
-        TimeBehaviour.instance.tiempoRestante = 20;
-        TimeBehaviour.instance.timeSlider.maxValue = 20;
-        TimeBehaviour.instance.timeSlider.value = 20;
+        pendingRoundWaves = RoundData.waves;
 
-        StartCoroutine(NextWave());
+        TimeBehaviour.instance.tiempoRestante = RoundData.totalTime;
+        TimeBehaviour.instance.timeSlider.maxValue = RoundData.totalTime;
+        TimeBehaviour.instance.timeSlider.value = RoundData.totalTime;
+
+        StartCoroutine(NextWave(RoundData.bubblesPerWave));
         isPlayingRound = true;
     }
 
-    public IEnumerator NextWave()
+    public IEnumerator NextWave(int bubblesPerWave)
     {
         yield return null;
         if (pendingRoundWaves > 0)
         {
             pendingRoundWaves--;
-            StartCoroutine(CreatePattern(2));
+            StartCoroutine(CreatePattern(bubblesPerWave));
         } else
         {
             StartCoroutine(EndRound());
@@ -73,6 +77,29 @@ public class GameManager : MonoBehaviour
     {
         Debug.Log("Round finished");
         isPlayingRound = false;
+
+        if (rounds[currentRound].dialogueAudio != null)
+        {
+            Debug.Log("audioclip.duration");
+            //Audiosource con el clip de audio
+            //Reproducir audio
+            //Espera de duracion de audio
+        }
+
+        currentRound++;
+
+        if (currentRound < rounds.Count)
+        {
+            Debug.Log("Loading new round");
+
+            yield return new WaitForSeconds(1);
+            StartCoroutine(RoundStart());
+        }
+        else
+        {
+            Debug.Log("Game ending");
+        }
+
         yield return null;
     }
 
@@ -107,7 +134,7 @@ public class GameManager : MonoBehaviour
         //Change pattern?
         if(chosenButtons.Count == 0) {
             Debug.Log("WaveFinished");
-            StartCoroutine(NextWave()); 
+            StartCoroutine(NextWave(rounds[currentRound].bubblesPerWave)); 
         }
     }
 

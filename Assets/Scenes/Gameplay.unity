@@ -1686,6 +1686,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5dab734d8f9d6a449e13788d6393bf5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rounds:
+  - {fileID: 11400000, guid: 379e77b8ca780ac42951f2ceac5ebe04, type: 2}
+  - {fileID: 11400000, guid: e625de450b69a844194c76367a949a47, type: 2}
+  - {fileID: 11400000, guid: ed29f677383298c4ea6cb4859acfb64a, type: 2}
+  - {fileID: 11400000, guid: d0e92c0cbf0c36444af6dc28d430426c, type: 2}
+  - {fileID: 11400000, guid: 1302e2d16581d26499c5f259e417d764, type: 2}
   machineBubbles:
   - {fileID: 6907440819725579289}
   - {fileID: 966658288}
