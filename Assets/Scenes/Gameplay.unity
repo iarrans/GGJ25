@@ -4078,8 +4078,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parentsAudioSource: {fileID: 1566823583}
-  SFXVolume: 1
-  BGMVolume: 1
+  SFXVolume: 0.75
+  BGMVolume: 0.65
   buttonSound:
   - {fileID: 8300000, guid: b0b329408bb3b4c4c85ab3d505707ad3, type: 3}
   - {fileID: 8300000, guid: 43abb32805e45bb4ab8c201bd77431d0, type: 3}
@@ -4088,19 +4088,19 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 66a0fb13487b7704395b1352da366205, type: 3}
   buttonSoundWrong: {fileID: 8300000, guid: 0df262d4d5ecd1143a149bb9900dada8, type: 3}
   machineAudios:
-  - {fileID: 8300000, guid: 9be21be277cc077438d55218aa31bca5, type: 3}
-  - {fileID: 8300000, guid: 3f8d2229122fde448aab469f50d1d16b, type: 3}
-  - {fileID: 8300000, guid: 0bf26c68ae5b6c346b17b9620b9a4209, type: 3}
-  - {fileID: 8300000, guid: 2b79676145c4729459b7802359d3571d, type: 3}
-  - {fileID: 8300000, guid: fb1a79c24016aaa42a77ec09f5b3ed1b, type: 3}
-  - {fileID: 8300000, guid: f429ce2bfe3b96043a6d114770d44ce6, type: 3}
+  - {fileID: 8300000, guid: af455efa595894a479773eac9802386e, type: 3}
+  - {fileID: 8300000, guid: 38496598a07b1bd4f8239f12e2c711df, type: 3}
+  - {fileID: 8300000, guid: 3e1337ddce646bc408cb21fc328a034c, type: 3}
+  - {fileID: 8300000, guid: b76997790503bb44f975f89ee4b6b514, type: 3}
+  - {fileID: 8300000, guid: 82ea2c1a80170d84b8f8f3142f31ba50, type: 3}
+  - {fileID: 8300000, guid: 9da15786e55666e44aced609dca07d54, type: 3}
   roundAudio: {fileID: 8300000, guid: b1d18a13d45caec4e863fcd0b0c674af, type: 3}
   BGMIntensities:
   - {fileID: 1635514060}
   - {fileID: 939124895}
   - {fileID: 17869893}
   FadeTime: 1
-  endGameDialogue: {fileID: 8300000, guid: ae37ee0879a91454aaff5859668ccc71, type: 3}
+  endGameDialogue: {fileID: 8300000, guid: 323814fcbf8b38d4f8550494548b2ade, type: 3}
   kidWon: {fileID: 8300000, guid: e149c0ad4ee063e479dd927bdb4f582f, type: 3}
 --- !u!1001 &1964450532
 PrefabInstance:
