@@ -3286,7 +3286,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 38f33a2ee6468774a8671f19e20415d7, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.661
+  m_Volume: 0.505
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -3985,6 +3985,17 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 1302e2d16581d26499c5f259e417d764, type: 2}
   - {fileID: 11400000, guid: 456d0e64d8302d141b0b555ff1726ebf, type: 2}
   - {fileID: 11400000, guid: 39f72eca326b69147acecaddb4847470, type: 2}
+  - {fileID: 11400000, guid: 85c2f9eb363092a46a42b719733cc09e, type: 2}
+  - {fileID: 11400000, guid: 660240e246bb2e14ea015d2d3c813fa7, type: 2}
+  - {fileID: 11400000, guid: a8f74ed57e0a1b24da55e9ffe0624c1c, type: 2}
+  - {fileID: 11400000, guid: d07c3992427ae56438427f250c247096, type: 2}
+  - {fileID: 11400000, guid: 5db41484339e608428bdc0b4f9ee0157, type: 2}
+  - {fileID: 11400000, guid: 390ab022bc6dea74e9cd3fa723405288, type: 2}
+  - {fileID: 11400000, guid: 6bc70f2c007189f45aa55f291704171f, type: 2}
+  - {fileID: 11400000, guid: 34e9032c5f8a35e428d10c342d0a91c7, type: 2}
+  - {fileID: 11400000, guid: c47d718a3b1b1f84baade932da3f05d2, type: 2}
+  - {fileID: 11400000, guid: 932f55630fa10314297db713150c37cc, type: 2}
+  - {fileID: 11400000, guid: 3bd2ef39c1d81d047a1302608244c8b0, type: 2}
   machineBubbles:
   - {fileID: 1182050397}
   - {fileID: 650576689}

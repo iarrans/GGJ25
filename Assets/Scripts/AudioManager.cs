@@ -9,7 +9,7 @@ public class AudioManager : MonoBehaviour
     // Start is called before the first frame update
     public AudioSource parentsAudioSource;
     public static AudioManager instance;
-    public float SFXVolume = 0.65f;
+    public float SFXVolume = 0.5f;
     public float BGMVolume = 0.6f;
 
     public List<AudioClip> buttonSound;
