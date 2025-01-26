@@ -13,9 +13,12 @@ public class TimeBehaviour : MonoBehaviour
 
     public static TimeBehaviour instance;
 
+    public GameObject gameOverScreen;
+
     private void Awake()
     {
         instance = this;
+        gameOverScreen.SetActive(false);
     }
 
     public void Update()
@@ -30,6 +33,7 @@ public class TimeBehaviour : MonoBehaviour
         {
             tiempoRestante = 0;
             Debug.Log("PERDISTEEE");
+            gameOverScreen.SetActive(true);
         }
     }
 
