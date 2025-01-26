@@ -1,0 +1,4 @@
+0 = Inicio de juego
+1 = Audios cambio de nivel random Blue
+2 = Audios cambio d enivel random Kakoto
+3 = Audio final de victoria.
