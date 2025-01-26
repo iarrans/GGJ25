@@ -3187,6 +3187,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: ed29f677383298c4ea6cb4859acfb64a, type: 2}
   - {fileID: 11400000, guid: d0e92c0cbf0c36444af6dc28d430426c, type: 2}
   - {fileID: 11400000, guid: 1302e2d16581d26499c5f259e417d764, type: 2}
+  - {fileID: 11400000, guid: 456d0e64d8302d141b0b555ff1726ebf, type: 2}
+  - {fileID: 11400000, guid: 39f72eca326b69147acecaddb4847470, type: 2}
   machineBubbles:
   - {fileID: 1182050397}
   - {fileID: 650576689}
