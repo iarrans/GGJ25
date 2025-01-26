@@ -4085,7 +4085,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 3078a2ddad54a1d4fab7d30daff43f40, type: 3}
   - {fileID: 8300000, guid: 50cda5e74d6d6aa4f95129fb850cbdef, type: 3}
   - {fileID: 8300000, guid: 66a0fb13487b7704395b1352da366205, type: 3}
-  buttonSoundWrong: {fileID: 8300000, guid: 0df262d4d5ecd1143a149bb9900dada8, type: 3}
+  buttonSoundWrong: {fileID: 8300000, guid: 29560c05beec6f449b29290e07c085ce, type: 3}
   machineAudios:
   - {fileID: 8300000, guid: af455efa595894a479773eac9802386e, type: 3}
   - {fileID: 8300000, guid: 38496598a07b1bd4f8239f12e2c711df, type: 3}
