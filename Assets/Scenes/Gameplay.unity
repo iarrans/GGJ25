@@ -4006,8 +4006,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 9d8c263be395dea4487ae14e836c3f9b, type: 2}
   - {fileID: 11400000, guid: 45a2df7e30c314942b2a6b5cac55f29a, type: 2}
   - {fileID: 11400000, guid: cbfb42866cb3f8940a4043fd304b4e03, type: 2}
-  - {fileID: 11400000, guid: 680f3eab303c45c4a962ddf2992a5307, type: 2}
   - {fileID: 11400000, guid: d7e55811baa37f4458b021cc326193aa, type: 2}
+  - {fileID: 11400000, guid: 680f3eab303c45c4a962ddf2992a5307, type: 2}
   machineBubbles:
   - {fileID: 1182050397}
   - {fileID: 650576689}
@@ -4101,7 +4101,7 @@ MonoBehaviour:
   - {fileID: 17869893}
   FadeTime: 1
   endGameDialogue: {fileID: 8300000, guid: ae37ee0879a91454aaff5859668ccc71, type: 3}
-  kidWon: {fileID: 8300000, guid: 4def2706fda51b94c8fd9fcd01d4cbe2, type: 3}
+  kidWon: {fileID: 8300000, guid: e149c0ad4ee063e479dd927bdb4f582f, type: 3}
 --- !u!1001 &1964450532
 PrefabInstance:
   m_ObjectHideFlags: 0

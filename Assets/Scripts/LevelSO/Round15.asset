@@ -15,5 +15,5 @@ MonoBehaviour:
   bubblesPerWave: 5
   waves: 4
   totalTime: 10
-  dialogueAudio: {fileID: 8300000, guid: 4696240722bdf2745ac94cd1ece6efd5, type: 3}
+  dialogueAudio: {fileID: 8300000, guid: 0f33f9715aa346a498bebe917c485ef0, type: 3}
   increasesTension: 0
