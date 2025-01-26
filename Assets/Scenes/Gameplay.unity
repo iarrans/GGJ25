@@ -4005,7 +4005,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: caed47a7f05639946a9ef298d31376cb, type: 2}
   - {fileID: 11400000, guid: 9d8c263be395dea4487ae14e836c3f9b, type: 2}
   - {fileID: 11400000, guid: 45a2df7e30c314942b2a6b5cac55f29a, type: 2}
-  - {fileID: 11400000, guid: cbfb42866cb3f8940a4043fd304b4e03, type: 2}
   - {fileID: 11400000, guid: d7e55811baa37f4458b021cc326193aa, type: 2}
   - {fileID: 11400000, guid: 680f3eab303c45c4a962ddf2992a5307, type: 2}
   machineBubbles:
@@ -4078,8 +4077,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parentsAudioSource: {fileID: 1566823583}
-  SFXVolume: 0.75
-  BGMVolume: 0.65
+  SFXVolume: 0.2
+  BGMVolume: 0.4
   buttonSound:
   - {fileID: 8300000, guid: b0b329408bb3b4c4c85ab3d505707ad3, type: 3}
   - {fileID: 8300000, guid: 43abb32805e45bb4ab8c201bd77431d0, type: 3}
