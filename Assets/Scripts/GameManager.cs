@@ -152,7 +152,7 @@ public class GameManager : MonoBehaviour
         MachineBubble bubbleButton = button.GetComponent<MachineBubble>();
 
         bubbleButton.isLighted = false;
-        AudioManager.instance.PlaySFXClip(AudioManager.instance.buttonSound);
+        AudioManager.instance.PlayBubbleClip();
 
         chosenButtons.Remove(bubbleButton);
         AddPoint();

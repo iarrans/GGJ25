@@ -12,7 +12,7 @@ public class AudioManager : MonoBehaviour
     public float SFXVolume = 1;
     public float BGMVolume = 1;
 
-    public AudioClip buttonSound;
+    public List<AudioClip> buttonSound;
     public AudioClip buttonSoundWrong;
     public List<AudioClip> machineAudios;
 
@@ -104,5 +104,11 @@ public class AudioManager : MonoBehaviour
 
         StartCoroutine(GameManager.instance.FadeOutWhite());
 
+    }
+
+    public void PlayBubbleClip()
+    {
+        int audio = UnityEngine.Random.Range(0, buttonSound.Count);
+        PlaySFXClip(buttonSound[audio]);
     }
 }

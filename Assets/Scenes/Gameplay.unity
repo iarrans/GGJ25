@@ -3260,7 +3260,12 @@ MonoBehaviour:
   parentsAudioSource: {fileID: 1566823583}
   SFXVolume: 1
   BGMVolume: 1
-  buttonSound: {fileID: 8300000, guid: 9ef855f92bb4cb549b987ea97a0c8879, type: 3}
+  buttonSound:
+  - {fileID: 8300000, guid: b0b329408bb3b4c4c85ab3d505707ad3, type: 3}
+  - {fileID: 8300000, guid: 43abb32805e45bb4ab8c201bd77431d0, type: 3}
+  - {fileID: 8300000, guid: 3078a2ddad54a1d4fab7d30daff43f40, type: 3}
+  - {fileID: 8300000, guid: 50cda5e74d6d6aa4f95129fb850cbdef, type: 3}
+  - {fileID: 8300000, guid: 66a0fb13487b7704395b1352da366205, type: 3}
   buttonSoundWrong: {fileID: 8300000, guid: 0df262d4d5ecd1143a149bb9900dada8, type: 3}
   machineAudios:
   - {fileID: 8300000, guid: b1d18a13d45caec4e863fcd0b0c674af, type: 3}
