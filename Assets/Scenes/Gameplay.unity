@@ -530,6 +530,22 @@ PrefabInstance:
       value: MachineButton (8)
       objectReference: {fileID: 0}
     - target: {fileID: 1894091356316051280, guid: bc8d2416bdfbd4343889297ffa900887, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -2007717612, guid: 01a882511a842e94482e7bdb10e26bb6, type: 3}
+    - target: {fileID: 1894091356316051280, guid: bc8d2416bdfbd4343889297ffa900887, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1894091356316051280, guid: bc8d2416bdfbd4343889297ffa900887, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1894091356316051280, guid: bc8d2416bdfbd4343889297ffa900887, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1894091356316051280, guid: bc8d2416bdfbd4343889297ffa900887, type: 3}
       propertyPath: m_PreserveAspect
       value: 1
       objectReference: {fileID: 0}
@@ -790,6 +806,22 @@ PrefabInstance:
       value: MachineButton (1)
       objectReference: {fileID: 0}
     - target: {fileID: 1894091356316051280, guid: bc8d2416bdfbd4343889297ffa900887, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -2007717612, guid: 01a882511a842e94482e7bdb10e26bb6, type: 3}
+    - target: {fileID: 1894091356316051280, guid: bc8d2416bdfbd4343889297ffa900887, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1894091356316051280, guid: bc8d2416bdfbd4343889297ffa900887, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1894091356316051280, guid: bc8d2416bdfbd4343889297ffa900887, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1894091356316051280, guid: bc8d2416bdfbd4343889297ffa900887, type: 3}
       propertyPath: m_PreserveAspect
       value: 1
       objectReference: {fileID: 0}
@@ -907,6 +939,22 @@ PrefabInstance:
       value: MachineButton (7)
       objectReference: {fileID: 0}
     - target: {fileID: 1894091356316051280, guid: bc8d2416bdfbd4343889297ffa900887, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -2007717612, guid: 01a882511a842e94482e7bdb10e26bb6, type: 3}
+    - target: {fileID: 1894091356316051280, guid: bc8d2416bdfbd4343889297ffa900887, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1894091356316051280, guid: bc8d2416bdfbd4343889297ffa900887, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1894091356316051280, guid: bc8d2416bdfbd4343889297ffa900887, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1894091356316051280, guid: bc8d2416bdfbd4343889297ffa900887, type: 3}
       propertyPath: m_PreserveAspect
       value: 1
       objectReference: {fileID: 0}
@@ -1022,6 +1070,7 @@ GameObject:
   - component: {fileID: 727173112}
   - component: {fileID: 727173114}
   - component: {fileID: 727173113}
+  - component: {fileID: 727173115}
   m_Layer: 5
   m_Name: Background
   m_TagString: Untagged
@@ -1040,8 +1089,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1334563744}
+  m_Children: []
   m_Father: {fileID: 1626955182}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -1087,6 +1135,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 727173111}
   m_CullTransparentMesh: 1
+--- !u!95 &727173115
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 727173111}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f0eeba5129796c248af123c56765e7f4, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &741683149
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1098,6 +1167,22 @@ PrefabInstance:
     - target: {fileID: 1878146779819354183, guid: bc8d2416bdfbd4343889297ffa900887, type: 3}
       propertyPath: m_Name
       value: MachineButton (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1894091356316051280, guid: bc8d2416bdfbd4343889297ffa900887, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -2007717612, guid: 01a882511a842e94482e7bdb10e26bb6, type: 3}
+    - target: {fileID: 1894091356316051280, guid: bc8d2416bdfbd4343889297ffa900887, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1894091356316051280, guid: bc8d2416bdfbd4343889297ffa900887, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1894091356316051280, guid: bc8d2416bdfbd4343889297ffa900887, type: 3}
+      propertyPath: m_Color.r
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1894091356316051280, guid: bc8d2416bdfbd4343889297ffa900887, type: 3}
       propertyPath: m_PreserveAspect
@@ -1456,6 +1541,26 @@ PrefabInstance:
       value: MachineButton
       objectReference: {fileID: 0}
     - target: {fileID: 1894091356316051280, guid: bc8d2416bdfbd4343889297ffa900887, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -2007717612, guid: 01a882511a842e94482e7bdb10e26bb6, type: 3}
+    - target: {fileID: 1894091356316051280, guid: bc8d2416bdfbd4343889297ffa900887, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1894091356316051280, guid: bc8d2416bdfbd4343889297ffa900887, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1894091356316051280, guid: bc8d2416bdfbd4343889297ffa900887, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1894091356316051280, guid: bc8d2416bdfbd4343889297ffa900887, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1894091356316051280, guid: bc8d2416bdfbd4343889297ffa900887, type: 3}
       propertyPath: m_PreserveAspect
       value: 1
       objectReference: {fileID: 0}
@@ -1572,6 +1677,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: MachineButton (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1894091356316051280, guid: bc8d2416bdfbd4343889297ffa900887, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -2007717612, guid: 01a882511a842e94482e7bdb10e26bb6, type: 3}
+    - target: {fileID: 1894091356316051280, guid: bc8d2416bdfbd4343889297ffa900887, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1894091356316051280, guid: bc8d2416bdfbd4343889297ffa900887, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1894091356316051280, guid: bc8d2416bdfbd4343889297ffa900887, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2380480049382178739, guid: bc8d2416bdfbd4343889297ffa900887, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1684,6 +1805,7 @@ GameObject:
   - component: {fileID: 1334563744}
   - component: {fileID: 1334563746}
   - component: {fileID: 1334563745}
+  - component: {fileID: 1334563747}
   m_Layer: 5
   m_Name: Parents
   m_TagString: Untagged
@@ -1698,12 +1820,12 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1334563743}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 727173112}
+  m_Father: {fileID: 1626955182}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -1748,6 +1870,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1334563743}
   m_CullTransparentMesh: 1
+--- !u!95 &1334563747
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1334563743}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: dfd03647d21d6a6428ee886590397416, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1467657299
 GameObject:
   m_ObjectHideFlags: 0
@@ -1851,6 +1994,22 @@ PrefabInstance:
     - target: {fileID: 1878146779819354183, guid: bc8d2416bdfbd4343889297ffa900887, type: 3}
       propertyPath: m_Name
       value: MachineButton (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1894091356316051280, guid: bc8d2416bdfbd4343889297ffa900887, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -2007717612, guid: 01a882511a842e94482e7bdb10e26bb6, type: 3}
+    - target: {fileID: 1894091356316051280, guid: bc8d2416bdfbd4343889297ffa900887, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1894091356316051280, guid: bc8d2416bdfbd4343889297ffa900887, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1894091356316051280, guid: bc8d2416bdfbd4343889297ffa900887, type: 3}
+      propertyPath: m_Color.r
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1894091356316051280, guid: bc8d2416bdfbd4343889297ffa900887, type: 3}
       propertyPath: m_PreserveAspect
@@ -2188,6 +2347,22 @@ PrefabInstance:
       value: MachineButton (2)
       objectReference: {fileID: 0}
     - target: {fileID: 1894091356316051280, guid: bc8d2416bdfbd4343889297ffa900887, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -2007717612, guid: 01a882511a842e94482e7bdb10e26bb6, type: 3}
+    - target: {fileID: 1894091356316051280, guid: bc8d2416bdfbd4343889297ffa900887, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1894091356316051280, guid: bc8d2416bdfbd4343889297ffa900887, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1894091356316051280, guid: bc8d2416bdfbd4343889297ffa900887, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1894091356316051280, guid: bc8d2416bdfbd4343889297ffa900887, type: 3}
       propertyPath: m_PreserveAspect
       value: 1
       objectReference: {fileID: 0}
@@ -2387,6 +2562,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 727173112}
+  - {fileID: 1334563744}
   - {fileID: 1861353359}
   - {fileID: 35614784}
   - {fileID: 547242440}
@@ -2670,6 +2846,7 @@ GameObject:
   - component: {fileID: 1861353359}
   - component: {fileID: 1861353361}
   - component: {fileID: 1861353360}
+  - component: {fileID: 1861353362}
   m_Layer: 5
   m_Name: Machine
   m_TagString: Untagged
@@ -2726,7 +2903,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 7dcc09941f80277458d5c376018cb0f6, type: 3}
+  m_Sprite: {fileID: 853490328, guid: 42330ece43bfb01498a6a4d80a281f26, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2744,6 +2921,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1861353358}
   m_CullTransparentMesh: 1
+--- !u!95 &1861353362
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1861353358}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e11945a9f453e7a44a172957399d1b09, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &1887887314
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2755,6 +2953,22 @@ PrefabInstance:
     - target: {fileID: 1878146779819354183, guid: bc8d2416bdfbd4343889297ffa900887, type: 3}
       propertyPath: m_Name
       value: MachineButton (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1894091356316051280, guid: bc8d2416bdfbd4343889297ffa900887, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -2007717612, guid: 01a882511a842e94482e7bdb10e26bb6, type: 3}
+    - target: {fileID: 1894091356316051280, guid: bc8d2416bdfbd4343889297ffa900887, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1894091356316051280, guid: bc8d2416bdfbd4343889297ffa900887, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1894091356316051280, guid: bc8d2416bdfbd4343889297ffa900887, type: 3}
+      propertyPath: m_Color.r
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1894091356316051280, guid: bc8d2416bdfbd4343889297ffa900887, type: 3}
       propertyPath: m_PreserveAspect
@@ -3067,6 +3281,22 @@ PrefabInstance:
     - target: {fileID: 1878146779819354183, guid: bc8d2416bdfbd4343889297ffa900887, type: 3}
       propertyPath: m_Name
       value: MachineButton (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1894091356316051280, guid: bc8d2416bdfbd4343889297ffa900887, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -2007717612, guid: 01a882511a842e94482e7bdb10e26bb6, type: 3}
+    - target: {fileID: 1894091356316051280, guid: bc8d2416bdfbd4343889297ffa900887, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1894091356316051280, guid: bc8d2416bdfbd4343889297ffa900887, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1894091356316051280, guid: bc8d2416bdfbd4343889297ffa900887, type: 3}
+      propertyPath: m_Color.r
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1894091356316051280, guid: bc8d2416bdfbd4343889297ffa900887, type: 3}
       propertyPath: m_PreserveAspect
