@@ -167,7 +167,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 0b9edb5d3ccd323499a04d2624d17ad0, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.661
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -1636,7 +1636,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 1816fd33c268be949afae37f4cfad378, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.661
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -3286,7 +3286,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 38f33a2ee6468774a8671f19e20415d7, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.661
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -4065,15 +4065,20 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 66a0fb13487b7704395b1352da366205, type: 3}
   buttonSoundWrong: {fileID: 8300000, guid: 0df262d4d5ecd1143a149bb9900dada8, type: 3}
   machineAudios:
-  - {fileID: 8300000, guid: b1d18a13d45caec4e863fcd0b0c674af, type: 3}
-  - {fileID: 8300000, guid: b1d18a13d45caec4e863fcd0b0c674af, type: 3}
+  - {fileID: 8300000, guid: 9be21be277cc077438d55218aa31bca5, type: 3}
+  - {fileID: 8300000, guid: 3f8d2229122fde448aab469f50d1d16b, type: 3}
+  - {fileID: 8300000, guid: 0bf26c68ae5b6c346b17b9620b9a4209, type: 3}
+  - {fileID: 8300000, guid: 2b79676145c4729459b7802359d3571d, type: 3}
+  - {fileID: 8300000, guid: fb1a79c24016aaa42a77ec09f5b3ed1b, type: 3}
+  - {fileID: 8300000, guid: f429ce2bfe3b96043a6d114770d44ce6, type: 3}
+  roundAudio: {fileID: 8300000, guid: b1d18a13d45caec4e863fcd0b0c674af, type: 3}
   BGMIntensities:
   - {fileID: 1635514060}
   - {fileID: 939124895}
   - {fileID: 17869893}
   FadeTime: 1
-  endGameDialogue: {fileID: 8300000, guid: 4def2706fda51b94c8fd9fcd01d4cbe2, type: 3}
-  kidWon: {fileID: 8300000, guid: 8b70546759d878742bf1d9a7455d7266, type: 3}
+  endGameDialogue: {fileID: 8300000, guid: ae37ee0879a91454aaff5859668ccc71, type: 3}
+  kidWon: {fileID: 8300000, guid: 4def2706fda51b94c8fd9fcd01d4cbe2, type: 3}
 --- !u!1001 &1964450532
 PrefabInstance:
   m_ObjectHideFlags: 0

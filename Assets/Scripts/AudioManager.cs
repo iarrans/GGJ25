@@ -9,12 +9,13 @@ public class AudioManager : MonoBehaviour
     // Start is called before the first frame update
     public AudioSource parentsAudioSource;
     public static AudioManager instance;
-    public float SFXVolume = 1;
-    public float BGMVolume = 1;
+    public float SFXVolume = 0.65f;
+    public float BGMVolume = 0.6f;
 
     public List<AudioClip> buttonSound;
     public AudioClip buttonSoundWrong;
     public List<AudioClip> machineAudios;
+    public AudioClip roundAudio;
 
     public List<AudioSource> BGMIntensities;
     int currentTension;
@@ -52,6 +53,7 @@ public class AudioManager : MonoBehaviour
     public void PlayMachineAudio()
     {
         int audio = UnityEngine.Random.Range(0, machineAudios.Count);
+        PlaySFXClip(roundAudio);
         PlaySFXClip(machineAudios[audio]);
     }
 
