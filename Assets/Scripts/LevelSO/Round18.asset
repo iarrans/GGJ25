@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bubblesPerWave: 6
   waves: 4
-  totalTime: 14
+  totalTime: 16
   dialogueAudio: {fileID: 0}
   increasesTension: 0

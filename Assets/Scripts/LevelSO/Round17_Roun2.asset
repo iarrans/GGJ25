@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Round17_Roun2
   m_EditorClassIdentifier: 
   bubblesPerWave: 6
-  waves: 4
+  waves: 3
   totalTime: 16
   dialogueAudio: {fileID: 8300000, guid: 6a0bb9394fcc05847a4847c194ef977c, type: 3}
   increasesTension: 0
